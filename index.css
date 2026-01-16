@@ -1,3 +1,24 @@
 h1 {
     text-align: center;
 }
+
+.p1{
+    color: blue;
+}
+
+.p2{
+    color: red;
+}
+
+
+.btn1{
+    background-color: green;
+    color: white;
+    margin: 20px;
+    padding: 10px 20px;
+}
+
+.btn1:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 9px 3px black;
+}
