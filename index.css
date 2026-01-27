@@ -1,8 +1,41 @@
 
 .logo{
     border-color: black;
+    border: 2px solid black;
     border-radius: 50%;
-    border-style: solid;
-    border-width: 2px;
-    padding: 5px,10px,5px,10px;
+    padding: 5px 10px;
+    font-weight: bold;
 }
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navgauche{
+    align-items: left;
+    align-content: left;
+}
+.navgauche span:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.navdroite{
+    display: flex;
+    align-items: right;
+    align-content: right;
+}
+
+.navdroite ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navdroite ul li:hover{
+    cursor: pointer;
+    color: red;
+}
+
