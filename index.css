@@ -1,16 +1,23 @@
 
+body{
+    /* Je veux faire un dégradé de couleur partant de #51333D à #181E41 */
+    background: linear-gradient(to right, #51333D, #181E41);
+}
+
 .logo{
-    border-color: black;
-    border: 2px solid black;
+    border-color: white;
+    border: 2px solid white;
     border-radius: 50%;
     padding: 5px 10px;
     font-weight: bold;
+    
 }
 
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: white;
 }
 
 .navgauche{
