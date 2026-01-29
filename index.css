@@ -2,6 +2,7 @@
 body{
     /* Je veux faire un dégradé de couleur partant de #51333D à #181E41 */
     background: linear-gradient(to right, #51333D, #181E41);
+    color: white;
 }
 
 .logo{
@@ -46,3 +47,140 @@ nav{
     color: red;
 }
 
+.navdroite li:last-child{
+    border: white 2px solid;
+    padding: 5px,5px,10px,5px;
+    
+}
+
+.section2 h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2 p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+}
+
+.section2 img{
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2p2{
+    letter-spacing: 10px;
+    color: gray;
+    margin-top: -40px;
+}
+
+.section3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.card{
+    border-radius: 10px;
+    padding: 20px,10px,20px,10px;
+    margin: 20px;
+}
+
+.section4gaucheP{
+    color: gray;
+}
+
+.kpis{
+    display: flex;
+    gap: 20px;
+
+}
+
+.kpis div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.item{
+    display: flex;
+    gap: 10px;
+}
+
+
+.section4{
+    display: flex;
+}
+.section4droite{
+    display: flex;
+}
+
+
+
+.section4 img{
+    width: 50px;
+    height: 50px;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding: 10px;
+}
+.white{
+    background-color: wheat;
+    color: black;
+}
+
+.item:hover{
+    cursor: pointer;
+    scale: 1.05;
+    transition: 0.5s ease-in-out;
+    background-color: inherit;
+    color: white;
+    border: 1px solid white;
+}
+.item h1{
+    font-size: 20px;
+}
+
+.section4gauche{
+    width: 40%;
+}
+.section4droite{
+    width: 40%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section4{
+    justify-content: space-around;
+}
+
+@media (max-width: 450px) {
+    .section4{
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .section4gauche, .section4droite{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        font-size: 7px;
+    }
+    .section4droite img{
+        width: 20px;
+        height: 20px;
+    }
+}
