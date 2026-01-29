@@ -1,0 +1,30 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+.cRouge{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.zone{
+    background-color: aqua;
+    width: 400px;
+    height: 400px;
+}
+
+.bonus2{
+    display: none;
+    background-color: yellow;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+header{
+    height: 100px;
+    background-color: wheat;
+}
+
