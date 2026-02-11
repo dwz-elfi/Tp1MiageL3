@@ -14,13 +14,15 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'front', 'index.html'));
 });
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
 app.use(express.static(path.join(__dirname, 'front')));
 
-connectDB();
 
-app.get('/val', (req, res) => {
-  res.send(`You sent the value: ${val}`);
-});
+app.use('api/auth',require('./routes/authRoutes'));
+
+connectDB();
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
